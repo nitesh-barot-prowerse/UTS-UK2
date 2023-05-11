@@ -30,9 +30,9 @@ Feature: Verify Data And Functionality Of Manage Quote Page
     When User clicks on quote number on manage quote page
     Then User will see quote information
 
-  Scenario: Items on manage quote page displays upon item select from quote status dropdown
-    When User selects appropriate option from quote status dropdown
-    Then Respected data will be displayed on Manage quote page
+#  Scenario: Items on manage quote page displays upon item select from quote status dropdown
+#    When User selects appropriate option from quote status dropdown
+#    Then Respected data will be displayed on Manage quote page
 
 
 

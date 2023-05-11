@@ -4,9 +4,9 @@ Feature: Check Admin Page Data And Functionality
     Given User should log in with username "sa" and password "Good2go@2019" to the admin panel
     When User clicks on administration icon on left tool bar
 
-#  Scenario: Check Letter information  on manage letter page
-#    And User clicks on letter template icon on administration page
-#    Then User will able to see list of existing letters
+  Scenario: Check Letter information  on manage letter page
+    And User clicks on letter template icon on administration page
+    Then User will able to see list of existing letters
 #
 #  Scenario:To check whether Add template page is editable or not
 #    And User clicks on letter template icon on administration page
@@ -14,8 +14,8 @@ Feature: Check Admin Page Data And Functionality
 #    Then User will redirects to edit letter template page
 #    And User will able to edit available fields on page
 #
-#  Scenario:  Verify that the Administration page displays with a set of icons.Corresponding page opens on clicking icon.
-#    Then Account page displays with icons and corresponding page displays by clicking on icon.
+  Scenario:  Verify that the Administration page displays with a set of icons.Corresponding page opens on clicking icon.
+    Then Account page displays with icons and corresponding page displays by clicking on icon.
 #
 #  Scenario: To verify whether View Product page displays with product details with status after by clicking on product code on manage product page
 #    When User clicks on product icon administration page
@@ -79,10 +79,10 @@ Feature: Check Admin Page Data And Functionality
 #    And User clicks on add insurer icon on manage insurer page
 #    Then Add insurer page displays with all fields
 #
-#  Scenario: View Agent page displays with all details by clicking on agent reference number on Manage agent page
-#    When User clicks on agent icon
-#    And User clicks on agent reference number under list of agent details
-#    Then View agent page displays with all information
+  Scenario: View Agent page displays with all details by clicking on agent reference number on Manage agent page
+    When User clicks on agent icon
+    And User clicks on agent reference number under list of agent details
+    Then View agent page displays with all information
 
   Scenario: Manage Company page displays with list of companies by clicking on company icon on administration page
     When User clicks on company icon

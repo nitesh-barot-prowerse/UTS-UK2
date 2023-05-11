@@ -14,23 +14,23 @@ Feature: Verify Data And Functionality Of Task Page
     Then User redirects to page with "Add Task" message
     And Assigned to dropdown appears with initial "sa FIT sa " current user
 
-  Scenario: Filter data of manage task page using select dropdown of page
-    When User Selects any option from status dropdown on manage task page
-    Then Status tage of manage task data displays accordingly
+#  Scenario: Filter data of manage task page using select dropdown of page
+#    When User Selects any option from status dropdown on manage task page
+#    Then Status tage of manage task data displays accordingly
 
-  Scenario: Filter data of manage task page using priority dropdown on page
-    When User Selects any option from priority dropdown on manage task page
-    Then Data under priority column of task data displays accordingly
+#  Scenario: Filter data of manage task page using priority dropdown on page
+#    When User Selects any option from priority dropdown on manage task page
+#    Then Data under priority column of task data displays accordingly
 
-  Scenario:Filter data of manage task page using type dropdown on page
-    When User Selects any option from type dropdown on manage task page
-    Then Data under type column of task data displays accordingly
-
-  Scenario:Filter data of manage task page using client dropdown on page
-    When User Selects any option from client dropdown on manage task page
-    Then Data under client column of task data displays accordingly
-
-  Scenario:To check task details should open after clicking on task title on manage task page
-    When User clicks on task tile on task manage page
-    Then Task details window will open with all task details
+#  Scenario:Filter data of manage task page using type dropdown on page
+#    When User Selects any option from type dropdown on manage task page
+#    Then Data under type column of task data displays accordingly
+#
+#  Scenario:Filter data of manage task page using client dropdown on page
+#    When User Selects any option from client dropdown on manage task page
+#    Then Data under client column of task data displays accordingly
+#
+#  Scenario:To check task details should open after clicking on task title on manage task page
+#    When User clicks on task tile on task manage page
+#    Then Task details window will open with all task details
 

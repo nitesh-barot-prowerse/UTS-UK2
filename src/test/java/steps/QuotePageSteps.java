@@ -72,22 +72,35 @@ public class QuotePageSteps {
     public void user_will_able_to_see_all_data_under_total_and_monthly_premium_colum_prefixed_by_£_sign() {
         String yearlyArray=quotePage.verifyTotalPremiumColumn();
         //System.out.println(yearlyArray);
-        String newArray[] = yearlyArray.split(" ");
-        for (int i = 0; i < newArray.length - 1; i++) {
-            if (newArray[i].equals("£")) {
-                System.out.println("All Amount Under Yearly Premium Column Prefixed By £");
-                break;
+
+        String[] split = yearlyArray.split("[ .\\ ]+");
+        // System.out.println(split);
+        for (int j = 1; j <= split.length-1; j=j+3) {
+            System.out.println(split[j]);
+            if (split[j].contains("£")) {
+                System.out.println("Data Prefixed by £");
+
+            } else {
+                Assert.fail();
             }
+
+
         }
 
         String monthlyArray=quotePage.verifyMonthlyPremiumColumn();
         //System.out.println(monthlyArray);
-        String monthArray[] = monthlyArray.split(" ");
-        for (int i = 0; i < monthArray.length - 1; i++) {
-            if (monthArray[i].equals("£")) {
-                System.out.println("All Amount Under Monthly Premium Column Prefixed By £");
-                break;
+
+        String monthArray[] = monthlyArray.split("[ .,\\ ]+");
+        for (int j = 1; j <= monthArray.length-1; j=j+3) {
+            System.out.println(monthArray[j]);
+            if (monthArray[j].contains("£")) {
+                System.out.println("Data Prefixed by £");
+
+            } else {
+                Assert.fail();
             }
+
+
         }
 
     }

@@ -56,12 +56,19 @@ public class ManageClaimsSteps {
     public void all_data_under_amount_paybale_column_prefixed_by_£_sign() {
         String amountPayable = claimPage.verifyAmountPayableColumn();
         //System.out.println(yearlyArray);
-        String apArray[] = amountPayable.split(" ");
-        for (int i = 0; i < apArray.length - 1; i++) {
-            if (apArray[i].equals("£")) {
-                System.out.println("All Amount Under Amount Payable Column Prefixed By £");
-                break;
+
+        String[] split = amountPayable.split("[ .\\ ]+");
+        // System.out.println(split);
+        for (int j = 1; j <= split.length-1; j=j+3) {
+            System.out.println(split[j]);
+            if (split[j].contains("£")) {
+                System.out.println("Data Prefixed by £");
+
+            } else {
+                Assert.fail();
             }
+
+
         }
 
     }

@@ -1,10 +1,23 @@
-[INFO ] 2023-05-10 16:41:01.693 [main] Log - User Opens US-UK-2 Website
-[INFO ] 2023-05-10 16:41:19.135 [main] Log - User Opens US-UK-2 Website
-[INFO ] 2023-05-10 16:41:20.161 [main] Log - User Enters Username And Password
-[INFO ] 2023-05-10 16:41:23.557 [main] Log - User Redirects To DashBord And Verify Through Message DashBoard On Page
-[INFO ] 2023-05-10 16:41:26.591 [main] Log - User verify (en-GB) text on right top corner of dash board page 
-[INFO ] 2023-05-10 16:58:37.357 [main] Log - User Opens US-UK-2 Website
-[INFO ] 2023-05-10 16:59:21.926 [main] Log - User Opens US-UK-2 Website
-[INFO ] 2023-05-10 16:59:22.964 [main] Log - User Enters Username And Password
-[INFO ] 2023-05-10 17:00:00.890 [main] Log - User Redirects To DashBord And Verify Through Message DashBoard On Page
-[INFO ] 2023-05-10 17:00:03.914 [main] Log - User verify (en-GB) text on right top corner of dash board page 
+[INFO ] 2023-05-16 14:41:30.607 [main] Log - User Opens US-UK-2 Website
+[INFO ] 2023-05-16 14:41:48.945 [main] Log - User Opens US-UK-2 Website
+[INFO ] 2023-05-16 14:41:49.967 [main] Log - User Enters Username And Password
+[INFO ] 2023-05-16 14:41:55.932 [main] Log - User Redirects To DashBord And Verify Through Message DashBoard On Page
+[INFO ] 2023-05-16 14:41:58.957 [main] Log - User verify (en-GB) text on right top corner of dash board page 
+[INFO ] 2023-05-16 14:52:56.521 [main] Log - User Opens US-UK-2 Website
+[INFO ] 2023-05-16 14:53:54.232 [main] Log - User Opens US-UK-2 Website
+[INFO ] 2023-05-16 14:53:55.260 [main] Log - User Enters Username And Password
+[ERROR] 2023-05-16 14:53:55.276 [main] Log - org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@id='UserName']"}
+  (Session info: chrome=113.0.5672.93)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'PROWERSE-014', ip: '127.0.0.1', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.93, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\prowe\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61721}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 72301074ed7387d007cb78fe7fe216f4
+*** Element info: {Using=xpath, value=//input[@id='UserName']}
+[INFO ] 2023-05-16 14:53:55.277 [main] Log - User Redirects To DashBord And Verify Through Message DashBoard On Page
+[INFO ] 2023-05-16 15:05:38.637 [main] Log - User Opens US-UK-2 Website
+[INFO ] 2023-05-16 15:06:03.375 [main] Log - User Opens US-UK-2 Website
+[INFO ] 2023-05-16 15:06:04.396 [main] Log - User Enters Username And Password
+[INFO ] 2023-05-16 15:06:11.214 [main] Log - User Redirects To DashBord And Verify Through Message DashBoard On Page
+[INFO ] 2023-05-16 15:06:14.243 [main] Log - User verify (en-GB) text on right top corner of dash board page 

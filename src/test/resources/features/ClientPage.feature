@@ -36,21 +36,22 @@ Feature:  Verify Client Module Features
 #    And User selects Add contact option from setting dropdown besides of active text on view client page
 #    And User enters all details inside add client window
 #    Then Contact details can view under contacts menu on view client page
-#
-#  Scenario: Verify add notes feature of client
-#    When User clicks on client code on manage client page
-#    And User selects Add notes options from setting dropdown besides the active text on view client page
-#    And User enters all details inside add notes window
-#    Then Notes details can view under note menu tab on view client page
-#
-#  Scenario: Verify add task feature of client
-#    When User clicks on client code on manage client page
-#    And User selects Add task options from setting dropdown besides the active text on view client page
-#    And User enters all details inside add task window
-#    Then Task details can view under task menu tab on view client page
 
-#  Scenario: To verify edit client functionality for existing client
-#    When User clicks on client code on manage client page
-#    And User selects edit client sections from setting dropdown besides the active text on view client page
-#    And User enters all details of client on edit client window
-#    Then Updated details can view on view client page
+  @Sanity
+  Scenario: Verify add notes feature of client
+    When User clicks on client code on manage client page
+    And User selects Add notes options from setting dropdown besides the active text on view client page
+    And User enters all details inside add notes window
+    Then Notes details can view under note menu tab on view client page
+  @Sanity
+  Scenario: Verify add task feature of client
+    When User clicks on client code on manage client page
+    And User selects Add task options from setting dropdown besides the active text on view client page
+    And User enters all details inside add task window
+    Then Task details can view under task menu tab on view client page
+  @Sanity
+  Scenario: To verify edit client functionality for existing client
+    When User clicks on client code on manage client page
+    And User selects edit client sections from setting dropdown besides the active text on view client page
+    And User enters all details of client on edit client window
+    Then Updated details can view on view client page

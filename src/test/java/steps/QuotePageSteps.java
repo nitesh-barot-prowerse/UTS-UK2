@@ -172,7 +172,7 @@ public class QuotePageSteps {
         String newArray[] = statusArray.split(" ");
         for (int i = 0; i < newArray.length - 1; i++) {
             if (newArray[i].equals("Open")) {
-                System.out.println("All Amount Under Yearly Premium Column Prefixed By £");
+                System.out.println("Quote has been filtered upon status dropdown option");
                 break;
             }
         }

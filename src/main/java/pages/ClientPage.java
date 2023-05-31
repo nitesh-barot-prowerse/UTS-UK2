@@ -87,6 +87,69 @@ public class ClientPage {
 
     private By contactData = By.xpath("//div[@id='gridName']/table/tbody/tr");
 
+    //Add notes details of client
+
+    private By addNotesOptionOfDD=By.xpath("//ul[@class='dropdown-menu']/li[6]/a");
+
+    private By titleOfNote=By.cssSelector("input[id='Title']");
+
+    private By descriptionOFNote=By.cssSelector("textarea[id='Description']");
+
+    private By createButtonOfWindow=By.xpath("//button[@type='submit' and @title='Create']");
+
+    private By noteTabOFMenu=By.xpath("//div[@class='project-tabs user-profile dsh-tab']/ul/li[4]/a");
+
+    private By noteDetails=By.xpath("//div[@id='gridClientNoteName']/table/tbody/tr[1]");
+
+    //Add task details of client
+
+    private By addTaskOptionOfDD=By.xpath("//ul[@class='dropdown-menu']/li[7]/a");
+
+    private By titleOfTask=By.cssSelector("input[id='Title']");
+
+    private By statusDropDownOfTask=By.xpath("//div[@class='ibox-content']/div[1]/div[1]/div[3]/div/div/div/div/span");
+
+    private By optionFromStatusDD=By.xpath("//ul[@id='TaskStatusId_listbox']/li[2]/span/span");
+
+    private By priorityDropDown=By.xpath("//div[@class='ibox-content']/div[1]/div[1]/div[4]/div/div/div/span");
+
+    private By optionFromPriority=By.xpath("//ul[@id='TaskPriorityId_listbox']/li[4]");
+
+    private By typeDropDown=By.xpath("//div[@class='ibox-content']/div[1]/div[1]/div[5]/div/div/div/span");
+
+    private By optionFromTypeDD=By.xpath("//ul[@id='TaskTypeId_listbox']/li[2]");
+
+    private By endDate=By.xpath("//input[@id='EndDate']");
+
+    private By createButtonOfTask=By.xpath("//button[@type='submit' and @value='Create']");
+
+    private By taskTabOFMenu=By.xpath("//div[@class='project-tabs user-profile dsh-tab']/ul/li[5]/a");
+
+    private By taskDetails=By.xpath("//div[@id='gridClientTaskName']/table/tbody/tr[1]");
+
+    //Edit client test case
+
+    private By editClientOptionsFromDD=By.xpath("//ul[@class='dropdown-menu']/li[1]");
+
+    private By clientFirstName=By.cssSelector("input[id='FirstName']");
+
+    private By clientLastName=By.cssSelector("input[id='LastName']");
+
+    private By clientBirthDate=By.cssSelector("input[id='BirthDate']");
+
+    private By clientPostAddressCode=By.cssSelector("input[id='Address1']");
+
+    private By clientAddressFromDD=By.xpath("//div[@id='cc_c2a']/ul/li[3]");
+
+    private By clientEmail=By.cssSelector("input[id='Email']");
+
+    private By clientContact=By.cssSelector("input[id='PrimaryContactNumber']");
+
+    private By saveButton=By.xpath("//button[@type='button' and @value='Create']");
+
+
+
+
 
     public String verifyClientManage() {
         driver.findElement(clientIcon).click();
@@ -233,7 +296,7 @@ public class ClientPage {
 
     public void selectAddContactOfClient() {
         try {
-            Thread.sleep(1000);
+            Thread.sleep(3000);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
@@ -250,6 +313,11 @@ public class ClientPage {
     }
 
     public void enterContactDetails() {
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
 
         driver.findElement(userName).sendKeys("Maitry");
         driver.findElement(userEmail).sendKeys("maitry@gmail.com");
@@ -273,6 +341,210 @@ public class ClientPage {
         driver.findElement(contactMenu).click();
         return driver.findElement(contactData).getText();
     }
+
+    //Add note information of client
+
+    public void selectAddNotesOfClient() {
+        try {
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+
+        Actions actions = new Actions(driver);
+        actions.moveToElement(driver.findElement(settingDropDown)).perform();
+        driver.findElement(addNotesOptionOfDD).click();
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+
+
+    }
+
+    public void enterNotesDetails() {
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+
+        driver.findElement(titleOfNote).sendKeys("Test");
+        driver.findElement(descriptionOFNote).sendKeys("Test Test Test");
+
+        driver.findElement(createButtonOfWindow).click();
+
+    }
+
+    public String verifyGeneratedNotesDetails() {
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+        driver.findElement(noteTabOFMenu).click();
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+        return driver.findElement(noteDetails).getText();
+    }
+
+    //Add task details of client
+
+    public void selectAddTaskOfClient() {
+        try {
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+
+        Actions actions = new Actions(driver);
+        actions.moveToElement(driver.findElement(settingDropDown)).perform();
+        driver.findElement(addTaskOptionOfDD).click();
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+
+
+    }
+
+    public void enterTaskDetails() {
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+
+        driver.findElement(titleOfNote).sendKeys("Test");
+        driver.findElement(statusDropDownOfTask).click();
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+        driver.findElement(optionFromStatusDD).click();
+        driver.findElement(priorityDropDown).click();
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+        driver.findElement(optionFromPriority).click();
+        driver.findElement(typeDropDown).click();
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+        driver.findElement(optionFromTypeDD).click();
+        driver.findElement(endDate).sendKeys("12.06.2023");
+        driver.findElement(createButtonOfTask).click();
+
+
+    }
+
+    public String verifyGeneratedTaskDetails() {
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+        driver.findElement(taskTabOFMenu).click();
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+        return driver.findElement(taskDetails).getText();
+    }
+
+    //Edit client details
+
+    public void selectEditClientDetails() {
+        try {
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+
+        Actions actions = new Actions(driver);
+        actions.moveToElement(driver.findElement(settingDropDown)).perform();
+        driver.findElement(editClientOptionsFromDD).click();
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+
+
+    }
+
+    public void editClientData(){
+        driver.findElement(clientFirstName).clear();
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+        driver.findElement(clientFirstName).sendKeys("Nitesh");
+        driver.findElement(clientLastName).clear();
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+        driver.findElement(clientLastName).sendKeys("Barot");
+        driver.findElement(clientBirthDate).clear();
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+        driver.findElement(clientBirthDate).sendKeys("12.09.1980");
+
+        driver.findElement(clientPostAddressCode).clear();
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+        driver.findElement(clientPostAddressCode).sendKeys("RM8 2TE");
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+        driver.findElement(clientAddressFromDD).click();
+
+        driver.findElement(clientEmail).clear();
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+        driver.findElement(clientEmail).sendKeys("nik@gmail.com");
+
+        driver.findElement(clientContact).clear();
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+        driver.findElement(clientContact).sendKeys("07459170022");
+        driver.findElement(saveButton).click();
+    }
+
+    public String verifyUpdatedClient(){
+        return driver.findElement(By.cssSelector("ul[class='iconlist']>li")).getText();
+    }
+
+
+
 
 
 }

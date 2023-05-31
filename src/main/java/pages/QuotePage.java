@@ -187,7 +187,7 @@ public class QuotePage {
     public void SelectItemFromDropDown(){
         driver.findElement(quoteStatusDropDown).click();
         try {
-            Thread.sleep(3000);
+            Thread.sleep(2000);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
@@ -195,6 +195,11 @@ public class QuotePage {
     }
 
     public String fetchAndVerifyDataAgainstDropDown(){
+        try {
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
         WebDriverWait wait = new WebDriverWait(driver, 10);
         List<WebElement> totalRow = wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath("//div[@id='gridName']/table/tbody/tr/td[5]")));
         String array = " ";

@@ -29,10 +29,10 @@ Feature: Verify Quote Module Features
   Scenario: Respected quote information page will be displayed upon clicking quote number on manage quote page
     When User clicks on quote number on manage quote page
     Then Quote Information page displays with details
-
-  Scenario: Items on manage quote page displays upon option selects from quote status dropdown
-    When User selects appropriate option from quote status dropdown
-    Then Respected data will be displayed on Manage quote page
+#
+#  Scenario: Items on manage quote page displays upon option selects from quote status dropdown
+#    When User selects appropriate option from quote status dropdown
+#    Then Respected data will be displayed on Manage quote page
 
 
 

@@ -89,66 +89,63 @@ public class ClientPage {
 
     //Add notes details of client
 
-    private By addNotesOptionOfDD=By.xpath("//ul[@class='dropdown-menu']/li[6]/a");
+    private By addNotesOptionOfDD = By.xpath("//ul[@class='dropdown-menu']/li[6]/a");
 
-    private By titleOfNote=By.cssSelector("input[id='Title']");
+    private By titleOfNote = By.cssSelector("input[id='Title']");
 
-    private By descriptionOFNote=By.cssSelector("textarea[id='Description']");
+    private By descriptionOFNote = By.cssSelector("textarea[id='Description']");
 
-    private By createButtonOfWindow=By.xpath("//button[@type='submit' and @title='Create']");
+    private By createButtonOfWindow = By.xpath("//button[@type='submit' and @title='Create']");
 
-    private By noteTabOFMenu=By.xpath("//div[@class='project-tabs user-profile dsh-tab']/ul/li[4]/a");
+    private By noteTabOFMenu = By.xpath("//div[@class='project-tabs user-profile dsh-tab']/ul/li[4]/a");
 
-    private By noteDetails=By.xpath("//div[@id='gridClientNoteName']/table/tbody/tr[1]");
+    private By noteDetails = By.xpath("//div[@id='gridClientNoteName']/table/tbody/tr[1]");
 
     //Add task details of client
 
-    private By addTaskOptionOfDD=By.xpath("//ul[@class='dropdown-menu']/li[7]/a");
+    private By addTaskOptionOfDD = By.xpath("//ul[@class='dropdown-menu']/li[7]/a");
 
-    private By titleOfTask=By.cssSelector("input[id='Title']");
+    private By titleOfTask = By.cssSelector("input[id='Title']");
 
-    private By statusDropDownOfTask=By.xpath("//div[@class='ibox-content']/div[1]/div[1]/div[3]/div/div/div/div/span");
+    private By statusDropDownOfTask = By.xpath("//div[@class='ibox-content']/div[1]/div[1]/div[3]/div/div/div/div/span");
 
-    private By optionFromStatusDD=By.xpath("//ul[@id='TaskStatusId_listbox']/li[2]/span/span");
+    private By optionFromStatusDD = By.xpath("//ul[@id='TaskStatusId_listbox']/li[2]/span/span");
 
-    private By priorityDropDown=By.xpath("//div[@class='ibox-content']/div[1]/div[1]/div[4]/div/div/div/span");
+    private By priorityDropDown = By.xpath("//div[@class='ibox-content']/div[1]/div[1]/div[4]/div/div/div/span");
 
-    private By optionFromPriority=By.xpath("//ul[@id='TaskPriorityId_listbox']/li[4]");
+    private By optionFromPriority = By.xpath("//ul[@id='TaskPriorityId_listbox']/li[4]");
 
-    private By typeDropDown=By.xpath("//div[@class='ibox-content']/div[1]/div[1]/div[5]/div/div/div/span");
+    private By typeDropDown = By.xpath("//div[@class='ibox-content']/div[1]/div[1]/div[5]/div/div/div/span");
 
-    private By optionFromTypeDD=By.xpath("//ul[@id='TaskTypeId_listbox']/li[2]");
+    private By optionFromTypeDD = By.xpath("//ul[@id='TaskTypeId_listbox']/li[2]");
 
-    private By endDate=By.xpath("//input[@id='EndDate']");
+    private By endDate = By.xpath("//input[@id='EndDate']");
 
-    private By createButtonOfTask=By.xpath("//button[@type='submit' and @value='Create']");
+    private By createButtonOfTask = By.xpath("//button[@type='submit' and @value='Create']");
 
-    private By taskTabOFMenu=By.xpath("//div[@class='project-tabs user-profile dsh-tab']/ul/li[5]/a");
+    private By taskTabOFMenu = By.xpath("//div[@class='project-tabs user-profile dsh-tab']/ul/li[5]/a");
 
-    private By taskDetails=By.xpath("//div[@id='gridClientTaskName']/table/tbody/tr[1]");
+    private By taskDetails = By.xpath("//div[@id='gridClientTaskName']/table/tbody/tr[1]");
 
     //Edit client test case
 
-    private By editClientOptionsFromDD=By.xpath("//ul[@class='dropdown-menu']/li[1]");
+    private By editClientOptionsFromDD = By.xpath("//ul[@class='dropdown-menu']/li[1]");
 
-    private By clientFirstName=By.cssSelector("input[id='FirstName']");
+    private By clientFirstName = By.cssSelector("input[id='FirstName']");
 
-    private By clientLastName=By.cssSelector("input[id='LastName']");
+    private By clientLastName = By.cssSelector("input[id='LastName']");
 
-    private By clientBirthDate=By.cssSelector("input[id='BirthDate']");
+    private By clientBirthDate = By.cssSelector("input[id='BirthDate']");
 
-    private By clientPostAddressCode=By.cssSelector("input[id='Address1']");
+    private By clientPostAddressCode = By.cssSelector("input[id='Address1']");
 
-    private By clientAddressFromDD=By.xpath("//div[@id='cc_c2a']/ul/li[3]");
+    private By clientAddressFromDD = By.xpath("//div[@id='cc_c2a']/ul/li[3]");
 
-    private By clientEmail=By.cssSelector("input[id='Email']");
+    private By clientEmail = By.cssSelector("input[id='Email']");
 
-    private By clientContact=By.cssSelector("input[id='PrimaryContactNumber']");
+    private By clientContact = By.cssSelector("input[id='PrimaryContactNumber']");
 
-    private By saveButton=By.xpath("//button[@type='button' and @value='Create']");
-
-
-
+    private By saveButton = By.xpath("//button[@type='button' and @value='Create']");
 
 
     public String verifyClientManage() {
@@ -484,7 +481,7 @@ public class ClientPage {
 
     }
 
-    public void editClientData(){
+    public void editClientData() {
         driver.findElement(clientFirstName).clear();
         try {
             Thread.sleep(1000);
@@ -539,13 +536,13 @@ public class ClientPage {
         driver.findElement(saveButton).click();
     }
 
-    public String verifyUpdatedClient(){
+    public String verifyUpdatedClient() {
         return driver.findElement(By.cssSelector("ul[class='iconlist']>li")).getText();
     }
 
     //Add notes for client on production
 
-    public void enterClientCode(){
+    public void enterClientCode() {
         driver.findElement(searchBox).sendKeys("TEST-00065");
         try {
             Thread.sleep(1000);
@@ -557,7 +554,7 @@ public class ClientPage {
     public void clickOnSearchButton() {
         driver.findElement(searchButton).click();
         try {
-            Thread.sleep(6000);
+            Thread.sleep(10000);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
@@ -568,7 +565,8 @@ public class ClientPage {
         List<WebElement> clientInfo = wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath("//div[@id='gridName']/table/tbody/tr[1]/td[2]")));
         for (WebElement client : clientInfo) {
             client.click();
-             break;
+            break;
+
         }
         try {
             Thread.sleep(2000);
@@ -576,9 +574,6 @@ public class ClientPage {
             throw new RuntimeException(e);
         }
     }
-
-
-
 
 
 }

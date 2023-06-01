@@ -138,7 +138,7 @@
                     <useUnlimitedThreads>true</useUnlimitedThreads>
 
                         <!-- include tags -->
-                        <groups>Sanity, Regression</groups>
+                        <groups>Sanity,Qa,Stage</groups>
                         <!-- exclude tags -->
                         <excludedGroups>slow</excludedGroups>
 

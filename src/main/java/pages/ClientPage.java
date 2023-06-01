@@ -415,7 +415,7 @@ public class ClientPage {
 
     public void enterTaskDetails() {
         try {
-            Thread.sleep(2000);
+            Thread.sleep(4000);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
@@ -541,6 +541,40 @@ public class ClientPage {
 
     public String verifyUpdatedClient(){
         return driver.findElement(By.cssSelector("ul[class='iconlist']>li")).getText();
+    }
+
+    //Add notes for client on production
+
+    public void enterClientCode(){
+        driver.findElement(searchBox).sendKeys("TEST-00065");
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    public void clickOnSearchButton() {
+        driver.findElement(searchButton).click();
+        try {
+            Thread.sleep(6000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    public void clickONClientCode() {
+        WebDriverWait wait = new WebDriverWait(driver, 10);
+        List<WebElement> clientInfo = wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath("//div[@id='gridName']/table/tbody/tr[1]/td[2]")));
+        for (WebElement client : clientInfo) {
+            client.click();
+             break;
+        }
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
     }
 
 

@@ -209,6 +209,25 @@ public class ClientPageSteps {
 
     }
 
+    //Add notes for client on production
+
+    @When("User enters test client code inside search box on manage client page")
+    public void user_enters_test_client_code_inside_search_box_on_manage_client_page() {
+        clientPage.enterClientCode();
+    }
+
+    @When("Uer clicks on search button on manage client page")
+    public void uer_clicks_on_search_button_on_manage_client_page() {
+        clientPage.clickOnSearchButton();
+
+    }
+
+    @When("User clicks on client code on manage client page on production")
+    public void user_clicks_on_client_code_on_manage_client_page_on_production() {
+        clientPage.clickONClientCode();
+
+    }
+
 
 
 }

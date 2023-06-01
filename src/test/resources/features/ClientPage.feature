@@ -8,7 +8,7 @@ Feature:  Verify Client Module Features
 @Sanity
   Scenario:Ensure that the Manage Client page displays list of client data after clicking on client icon on left tool bar
     Then Manage client page displays with list of clients
-  
+
  @Qa @Stage
   Scenario: To add and verify new client details inside client module
     When User clicks on add client icon on manage client page

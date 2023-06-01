@@ -5,10 +5,11 @@ Feature:  Verify Client Module Features
     Given User should log in with username "sa" and password "Good2go@2019" to the admin panel
     When User clicks on client icon on left tool bar
 
-@Sanity @Regression
+@Sanity
   Scenario:Ensure that the Manage Client page displays list of client data after clicking on client icon on left tool bar
     Then Manage client page displays with list of clients
-@Sanity @Regression
+  
+ @Qa @Stage
   Scenario: To add and verify new client details inside client module
     When User clicks on add client icon on manage client page
     And User enters all mandatory details on add client page
@@ -37,19 +38,19 @@ Feature:  Verify Client Module Features
 #    And User enters all details inside add client window
 #    Then Contact details can view under contacts menu on view client page
 
-  @Sanity
+  @Qa @Stage
   Scenario: Verify add notes feature of client
     When User clicks on client code on manage client page
     And User selects Add notes options from setting dropdown besides the active text on view client page
     And User enters all details inside add notes window
     Then Notes details can view under note menu tab on view client page
-  @Sanity
+  @Qa @Stage
   Scenario: Verify add task feature of client
     When User clicks on client code on manage client page
     And User selects Add task options from setting dropdown besides the active text on view client page
     And User enters all details inside add task window
     Then Task details can view under task menu tab on view client page
-  @Sanity
+  @Qa @Stage
   Scenario: To verify edit client functionality for existing client
     When User clicks on client code on manage client page
     And User selects edit client sections from setting dropdown besides the active text on view client page

@@ -37,12 +37,12 @@ Feature: Verify Quote Module Features
     When User clicks on quote number on manage quote page
     Then Quote Information page displays with details
 
-  @Qa @Stage
+  @Qa @Stage @Production
   Scenario: Items on manage quote page displays upon option selects from quote status dropdown
     When User selects appropriate option from quote status dropdown
     Then Respected data will be displayed on Manage quote page
 
-  @Qa @Stage
+  @Qa @Stage @Production
   Scenario: Fetch list of quote based on product option from product dropdown on manage quote page
     When User selects appropriate option from product dropdown on manage quote page
     And User clicks on search button on manage quote page

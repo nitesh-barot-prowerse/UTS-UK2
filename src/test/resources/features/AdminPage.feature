@@ -3,6 +3,7 @@ Feature: Verify Admin Module Features
   Background:
     Given User should log in with username "sa" and password "Good2go@2019" to the admin panel
     When User clicks on administration icon on left tool bar
+
   @Sanity
   Scenario:The Letter Templates page should open with the list of existing Letter Templates.
     And User clicks on letter template icon on administration page

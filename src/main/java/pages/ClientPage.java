@@ -176,7 +176,7 @@ public class ClientPage {
     public void clickOnButton() {
         driver.findElement(searchButton).click();
         try {
-            Thread.sleep(1000);
+            Thread.sleep(2000);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
@@ -208,7 +208,12 @@ public class ClientPage {
         List<WebElement> clientInfo = wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath("//div[@id='gridName']/table/tbody/tr[1]/td[2]")));
         for (WebElement client : clientInfo) {
             client.click();
-            // break;
+            try {
+                Thread.sleep(3000);
+            } catch (InterruptedException e) {
+                throw new RuntimeException(e);
+            }
+             break;
         }
     }
 
@@ -566,13 +571,13 @@ public class ClientPage {
         for (WebElement client : clientInfo) {
             client.click();
             break;
-
         }
         try {
-            Thread.sleep(2000);
+            Thread.sleep(3000);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
+
     }
 
 

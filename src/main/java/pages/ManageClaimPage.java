@@ -236,13 +236,13 @@ public class ManageClaimPage {
         }
         driver.findElement(selectItemFromStatusDropDown).click();
         try {
-            Thread.sleep(1000);
+            Thread.sleep(3000);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
         driver.findElement(clickSearchButton).click();
         try {
-            Thread.sleep(3000);
+            Thread.sleep(4000);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
@@ -250,7 +250,7 @@ public class ManageClaimPage {
 
     public String verifyTreatmentStatus(){
         WebDriverWait cWait = new WebDriverWait(driver, 10);
-        List<WebElement> treatmentStatus = cWait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath("//div[@id='gridName']/table/tbody[1]/tr")));
+        List<WebElement> treatmentStatus = cWait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath("//div[@id='gridName']/table/tbody/tr")));
 
         String Status = " ";
         for (WebElement cEle : treatmentStatus) {

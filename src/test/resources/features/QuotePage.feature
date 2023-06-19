@@ -37,12 +37,12 @@ Feature: Verify Quote Module Features
     When User clicks on quote number on manage quote page
     Then Quote Information page displays with details
 
-  @Qa @Stage @Production
+  @Sanity
   Scenario: Items on manage quote page displays upon option selects from quote status dropdown
     When User selects appropriate option from quote status dropdown
     Then Respected data will be displayed on Manage quote page
 
-  @Qa @Stage @Production
+  @Sanity
   Scenario: Fetch list of quote based on product option from product dropdown on manage quote page
     When User selects appropriate option from product dropdown on manage quote page
     And User clicks on search button on manage quote page
@@ -60,11 +60,26 @@ Feature: Verify Quote Module Features
     And User clicks on search button on manage quote page
     Then Appropriate quote information displays on manage quote page
 
-  @Qa @Stage
+  @Sanity
   Scenario:Verify include payment feature of quote module
     When User selects include payment only quotes checkbox
     And User clicks on search button on manage quote page
     Then Appropriate quote list displays on manage quote page
+
+#    @Qa
+#    Scenario: Edit quote details and verifies the same
+#    When User enters quote number inside searc box on manage quote page
+#    And User clicks on search button on manage quote page
+##    And User clicks on quote number from list of quote on manage quote page
+#    And User selects edit quote option from cog icon on quote information page
+#    Then User can edit all required field on edit quote page
+#
+#  @Stage
+#  Scenario: Edit quote details and verifies the same
+#    When User enters quote number inside search box on manage quote page
+#    And User clicks on search button on manage quote page
+#    And User selects edit quote option from cog icon on quote information page
+#    Then User can edit all required field on edit quote page
 
 
 

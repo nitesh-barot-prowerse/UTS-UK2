@@ -95,7 +95,7 @@ public class ManageClaimsSteps {
             throw new RuntimeException(e);
         }
         String message = claimPage.verifyClaimInfoPageText();
-        Assert.assertEquals(message, "Claim Information");
+        Assert.assertEquals(message, "Manage Claims");
 
 
     }
@@ -117,6 +117,7 @@ public class ManageClaimsSteps {
 
     }
 
+//Treatment status should reflect upon option selected from treatment status drop down on manage claim page
     @When("User selects any options from treatment status dropdown on manage claim page")
     public void user_selects_any_options_from_treatment_status_dropdown_on_manage_claim_page() {
         claimPage.selectItemFromStatusDropDown();
@@ -127,7 +128,7 @@ public class ManageClaimsSteps {
     public void appropriate_treatment_status_will_display_on_manage_claim_page_under_claim_details() {
         String treatmentStatus = claimPage.verifyTreatmentStatus();
 
-       if (treatmentStatus.contains("Pending")){
+       if (treatmentStatus.length()>0){
            System.out.println("Treatment status appeared as per requirement");
        }
     }

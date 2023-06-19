@@ -150,6 +150,11 @@ public class ClientPage {
 
     public String verifyClientManage() {
         driver.findElement(clientIcon).click();
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
         return driver.findElement(displayedMessage).getText();
     }
 
@@ -196,7 +201,7 @@ public class ClientPage {
     public void selectClientStatus() {
         driver.findElement(statusDropDown).click();
         try {
-            Thread.sleep(1000);
+            Thread.sleep(2000);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
@@ -213,13 +218,29 @@ public class ClientPage {
             } catch (InterruptedException e) {
                 throw new RuntimeException(e);
             }
-             break;
+            break;
         }
     }
 
     public String verifyClientStatus() {
         String Status = driver.findElement(displayedStatus).getText();
         return Status;
+    }
+
+    //To check whether add quote page is displays for same user by clicking on add button on view client page
+    public String clickClientCodeToGetClientNumber() {
+
+        WebDriverWait wait = new WebDriverWait(driver, 10);
+        WebElement clientInfo = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@id='gridName']/table/tbody/tr[1]/td[2]")));
+        String clientNumber =clientInfo.getText();
+        System.out.println(clientNumber);
+        clientInfo.click();
+        try {
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+        return clientNumber;
     }
 
     public void clickOnAddQuoteButton() {
@@ -336,7 +357,7 @@ public class ClientPage {
 
     public String verifyGeneratedContactDetails() {
         try {
-            Thread.sleep(2000);
+            Thread.sleep(4000);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
@@ -444,7 +465,7 @@ public class ClientPage {
             throw new RuntimeException(e);
         }
         driver.findElement(optionFromTypeDD).click();
-        driver.findElement(endDate).sendKeys("12.06.2023");
+        driver.findElement(endDate).sendKeys("12.06.2025");
         driver.findElement(createButtonOfTask).click();
 
 
@@ -452,7 +473,7 @@ public class ClientPage {
 
     public String verifyGeneratedTaskDetails() {
         try {
-            Thread.sleep(2000);
+            Thread.sleep(4000);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }

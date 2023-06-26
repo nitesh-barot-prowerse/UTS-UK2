@@ -151,7 +151,7 @@ public class ClientPage {
     public String verifyClientManage() {
         driver.findElement(clientIcon).click();
         try {
-            Thread.sleep(2000);
+            Thread.sleep(3000);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
@@ -181,7 +181,7 @@ public class ClientPage {
     public void clickOnButton() {
         driver.findElement(searchButton).click();
         try {
-            Thread.sleep(2000);
+            Thread.sleep(3000);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
@@ -256,7 +256,7 @@ public class ClientPage {
     public void clickOnAddClientButton() {
         driver.findElement(addClientButton).click();
         try {
-            Thread.sleep(1000);
+            Thread.sleep(3000);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
@@ -580,7 +580,7 @@ public class ClientPage {
     public void clickOnSearchButton() {
         driver.findElement(searchButton).click();
         try {
-            Thread.sleep(10000);
+            Thread.sleep(3000);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }

@@ -47,6 +47,11 @@ public class TaskPage {
 
     public void clickOnTaskIcon() {
         driver.findElement(taskIcon).click();
+        try {
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
     }
 
     public String verifyTaskPage() {
@@ -67,6 +72,11 @@ public class TaskPage {
 
     public void clickAddTaskButton() {
         driver.findElement(addTaskButton).click();
+        try {
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
     }
 
     public String verifyAddTaskPage() {
@@ -105,7 +115,7 @@ public class TaskPage {
         driver.findElement(openOptionFromStatusDropDown).click();
         driver.findElement(searchButton).click();
         try {
-            Thread.sleep(2000);
+            Thread.sleep(3000);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
@@ -170,7 +180,7 @@ public class TaskPage {
         driver.findElement(optionUnderTypeDropDown).click();
         driver.findElement(searchButton).click();
         try {
-            Thread.sleep(2000);
+            Thread.sleep(3000);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
@@ -208,7 +218,7 @@ public class TaskPage {
         // driver.findElement(optionUnderTypeDropDown).click();
         driver.findElement(searchButton).click();
         try {
-            Thread.sleep(2000);
+            Thread.sleep(3000);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }

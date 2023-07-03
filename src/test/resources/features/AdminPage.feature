@@ -134,57 +134,57 @@ Feature: Verify Admin Module Features
     And User clicks on add insurer icon on manage insurer page
     Then Add insurer page displays with all fields
 
-#  @Sanity
-#  Scenario: Edit insurer page displays in editable format by clicking on edit icon against insurer code on manage insurer page
-#    When User clicks on insurer icon on administration page
-#    And User clicks on edit icon against insurer code on manage insurer page
-#    Then Edit insurer page displays in editable format
-#
-#   # Agent
-#
-#  @Sanity
-#  Scenario: View Agent page displays with all details by clicking on agent reference number on Manage agent page
-#    When User clicks on agent icon
-#    And User clicks on agent reference number under list of agent details
-#    Then View agent page displays with all information
-#
-#  @Sanity
-#  Scenario: Filter details on manage agent page upon option of category,type and active drop down
-#    When User clicks on agent icon
-#    And User Selects appropriate option from category,type and active drop down
-#    And User clicks on search button on manage agent page
-#    Then Appropriate agent details displays on manage agent page
-#
-#  @Sanity
-#  Scenario:Add agent page displays with all details by clicking on add agent button on manage agent page
-#    When User clicks on agent icon
-#    And User clicks on add agent button on manage agent page
-#    Then Add agent page displays with all details
-#
-#  @Sanity
-#  Scenario: Edit Agent page displays in editable format by selecting edit icon from cog icon dropdown against agent reference number on manage agent page
-#    When User clicks on agent icon
-#    And User selects edit icon from cog icon dropdown against agent reference number on manage agent page
-#    Then Edit agent page displays in editable format
-#
-#    #Company
-#
-#  @Sanity
-#  Scenario: Manage Company page displays with list of companies by clicking on company icon on administration page
-#    When User clicks on company icon
-#    Then Manage company page displays with list of available companies
-#
-#  @Sanity
-#  Scenario:Filter details on manage company page upon option of state and country drop down
-#    When User clicks on company icon
-#    And User selects options from state and country drop down
-#    Then Appropriate list of company displays on manage company page
-#
-#  @Sanity
-#  Scenario:Add company page displays with all details by clicking on add company button on manage company page
-#    When User clicks on company icon
-#    And User clicks on add company button on manage company page
-#    Then Add company page displays with all details
+  @Sanity
+  Scenario: Edit insurer page displays in editable format by clicking on edit icon against insurer code on manage insurer page
+    When User clicks on insurer icon on administration page
+    And User clicks on edit icon against insurer code on manage insurer page
+    Then Edit insurer page displays in editable format
+
+   # Agent
+
+  @Sanity
+  Scenario: View Agent page displays with all details by clicking on agent reference number on Manage agent page
+    When User clicks on agent icon
+    And User clicks on agent reference number under list of agent details
+    Then View agent page displays with all information
+
+  @Sanity
+  Scenario: Filter details on manage agent page upon option of category,type and active drop down
+    When User clicks on agent icon
+    And User Selects appropriate option from category,type and active drop down
+    And User clicks on search button on manage agent page
+    Then Appropriate agent details displays on manage agent page
+
+  @Sanity
+  Scenario:Add agent page displays with all details by clicking on add agent button on manage agent page
+    When User clicks on agent icon
+    And User clicks on add agent button on manage agent page
+    Then Add agent page displays with all details
+
+  @Sanity
+  Scenario: Edit Agent page displays in editable format by selecting edit icon from cog icon dropdown against agent reference number on manage agent page
+    When User clicks on agent icon
+    And User selects edit icon from cog icon dropdown against agent reference number on manage agent page
+    Then Edit agent page displays in editable format
+
+    #Company
+
+  @Sanity
+  Scenario: Manage Company page displays with list of companies by clicking on company icon on administration page
+    When User clicks on company icon
+    Then Manage company page displays with list of available companies
+
+  @Sanity
+  Scenario:Filter details on manage company page upon option of state and country drop down
+    When User clicks on company icon
+    And User selects options from state and country drop down
+    Then Appropriate list of company displays on manage company page
+
+  @Sanity
+  Scenario:Add company page displays with all details by clicking on add company button on manage company page
+    When User clicks on company icon
+    And User clicks on add company button on manage company page
+    Then Add company page displays with all details
 
 
 

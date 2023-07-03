@@ -73,8 +73,127 @@ public class SettingPage {
 
     private By displayedMessageOnAddInsurerClassPage = By.xpath("//div[@class='row wrapper border-bottom white-bg page-heading']/div/h2");
 
+    //Division Page
+
+    private By divisionIcon = By.xpath("//div[@class='ibox-content']/div/div[4]/a/i");
+
+    private By editIconOnManageDivisionPage = By.xpath("//div[@id='gridName']/table/tbody/tr[1]/td[5]/div/a[1]");
+
+    private By displayedMessageOnEditDivisionPage = By.xpath("//div[@class='row wrapper border-bottom white-bg page-heading']/div/h2");
+
+    private By inputTypeDivisionName = By.cssSelector("input[id='DivisionName']");
+
+    private By inputTypeDescriptionOfEditDivisionPage = By.cssSelector("textarea[id='Description']");
+
+    private By addDivisionIcon = By.xpath("//div[@class='form-group pull-right']/div/a[2]");
+
+    private By displayedMessageOnAddDivisionPage = By.xpath("//div[@class='row wrapper border-bottom white-bg page-heading']/div/h2");
+
+    //Branch Page
+
+    private By branchIcon = By.xpath("//div[@class='ibox-content']/div/div[5]/a/i");
+
+    private By editIconOnManageBranchPage = By.xpath("//div[@id='gridName']/table/tbody/tr[1]/td[6]/div/a[1]");
+
+    private By displayedMessageOnEditBranchPage = By.xpath("//div[@class='row wrapper border-bottom white-bg page-heading']/div/h2");
+
+    private By inputTypeBranchCode = By.cssSelector("input[id='Code']");
+
+    private By inputTypeBranchName = By.cssSelector("input[id='BranchName']");
+
+    private By inputTypeDescriptionOfEditBranchPage = By.cssSelector("textarea[id='Description']");
+
+    private By addBranchIcon = By.xpath("//div[@class='form-group pull-right']/div/a[2]");
+
+    private By displayedMessageOnAddBranchPage = By.xpath("//div[@class='row wrapper border-bottom white-bg page-heading']/div/h2");
+
+    //Change Area Page
+
+    private By changeAreaIcon = By.xpath("//div[@class='ibox-content']/div/div[6]/a/i");
+
+    private By editIconOnManageChangeAreaPage = By.xpath("//div[@id='gridName']/table/tbody/tr[1]/td[5]/div/a[1]");
+
+    private By displayedMessageOneEditChangeAreaPage = By.xpath("//div[@class='row wrapper border-bottom white-bg page-heading']/div/h2");
+
+    private By inputTypeChangeAreaName = By.cssSelector("input[id='ChangeAreaName']");
+
+    private By inputTypeDescriptionOfEditChangeAreaNamePage = By.cssSelector("textarea[id='Description']");
+
+    private By addChangeAreaIcon = By.xpath("//div[@class='form-group pull-right']/div/a[2]");
+
+    private By displayedMessageOnAddChangeAreaPage = By.xpath("//div[@class='row wrapper border-bottom white-bg page-heading']/div/h2");
+
+    //Pet Sex Page
+
+    private By sexIcon = By.xpath("//div[@class='ibox-content']/div/div[7]/a/i");
+
+    private By editIconOnManageSexPage = By.xpath("//div[@id='gridName']/table/tbody/tr[1]/td[6]/div/a[1]");
+
+    private By displayedMessageOneEditSexPage = By.xpath("//div[@class='row wrapper border-bottom white-bg page-heading']/div/h2");
+
+    private By inputTypeSexName = By.cssSelector("input[id='SexName']");
+
+    private By inputTypeDescriptionOfEditSexPage = By.cssSelector("textarea[id='Description']");
+
+    private By addSexIcon = By.xpath("//div[@class='form-group pull-right']/div/a[2]");
+
+    private By displayedMessageOnAddSexPage = By.xpath("//div[@class='row wrapper border-bottom white-bg page-heading']/div/h2");
+
+    //Debtor code Page
+
+    private By debtorCodeIcon = By.xpath("//div[@class='ibox-content']/div/div[8]/a/i");
+
+    private By editIconOnManageDebtorCodePage = By.xpath("//div[@id='gridName']/table/tbody/tr[1]/td[5]/div/a[1]");
+
+    private By displayedMessageOneEditDebtorCodePage = By.xpath("//div[@class='row wrapper border-bottom white-bg page-heading']/div/h2");
+
+    private By inputTypeDebtorCodeName = By.cssSelector("input[id='DebtorCodeName']");
+
+    private By inputTypeDescriptionOfEditDebtorCodePage = By.cssSelector("textarea[id='Description']");
+
+    private By addDebtorCodeIcon = By.xpath("//div[@class='form-group pull-right']/div/a[2]");
+
+    private By displayedMessageOnAddDebtorCodePage = By.xpath("//div[@class='row wrapper border-bottom white-bg page-heading']/div/h2");
+
+    //Renewal type Page
+
+    private By renewalTypeIcon = By.xpath("//div[@class='ibox-content']/div/div[9]/a/i");
+
+    private By editIconOnManageRenewalTypePage = By.xpath("//div[@id='gridName']/table/tbody/tr[1]/td[5]/div/a[1]");
+
+    private By displayedMessageOneAddRenewalTypePage = By.xpath("//div[@class='row wrapper border-bottom white-bg page-heading']/div/h2");
+
+    private By inputTypeRenewTypeName = By.cssSelector("input[id='RenewalTypeName']");
+
+    private By inputTypeDescriptionOfEditRenewTypePage = By.cssSelector("textarea[id='Description']");
+
+    private By addRenewalTypeIcon = By.xpath("//div[@class='form-group pull-right']/div/a[2]");
+
+    private By displayedMessageOnEditRenewalTypePage = By.xpath("//div[@class='row wrapper border-bottom white-bg page-heading']/div/h2");
+
+    //Task type Page
+
+    private By taskTypeIcon = By.xpath("//div[@class='ibox-content']/div/div[10]/a/i");
+
+    private By editIconOnManageTaskTypePage = By.xpath("//div[@id='gridName']/table/tbody/tr[1]/td[5]/div/a[1]");
+
+    private By displayedMessageOneAddTaskTypePage = By.xpath("//div[@class='row wrapper border-bottom white-bg page-heading']/div/h2");
+
+    //private By inputTypeRenewTypeName = By.cssSelector("input[id='RenewalTypeName']");
+
+   // private By inputTypeDescriptionOfEditRenewTypePage = By.cssSelector("textarea[id='Description']");
+
+    private By addTaskTypeIcon = By.xpath("//div[@class='form-group pull-right']/div/a[2]");
+
+    private By displayedMessageOnEditTaskTypePage = By.xpath("//div[@class='row wrapper border-bottom white-bg page-heading']/div/h2");
+
     public void clickIcon() {
         driver.findElement(lookUpIcon).click();
+        try {
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
     }
 
 
@@ -704,6 +823,466 @@ public class SettingPage {
         driver.findElement(inputTypeDescriptionOfEditInsurerPage).sendKeys("Test");
 
         return driver.findElement(displayedMessageOnEditInsurerClassPage).getText();
+
+    }
+
+    //To verify whether Manage division page displays with division details by clicking on division icon on setting page
+
+    public void clickOnDivisionIcon() {
+        driver.findElement(divisionIcon).click();
+        try {
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+
+    }
+
+    public String verifyManageDivisionPage() {
+        WebDriverWait wait = new WebDriverWait(driver, 10);
+        List<WebElement> divisionClass = wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath("//div[@id='gridName']/table/tbody/tr")));
+        String details = " ";
+        for (WebElement data : divisionClass) {
+            details = details + data.getText();
+        }
+        return details;
+
+    }
+
+    //Add division page displays will all details when user clicks on add division icon on manage division page
+
+    public void clickOnAddDivisionIcon() {
+        driver.findElement(addDivisionIcon).click();
+        try {
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+
+    }
+
+    public String verifyAddDivisionPage() {
+        return driver.findElement(displayedMessageOnAddDivisionPage).getText();
+
+    }
+
+    //Edit division page displays upon clicking on edit icon against division name on manage division page
+
+    public void clickOnEditIconOnManageDivisionPage() {
+        driver.findElement(editIconOnManageDivisionPage).click();
+        try {
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+
+    }
+
+    public String verifyEditDivisionPage() {
+        driver.findElement(inputTypeDivisionName).clear();
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+        driver.findElement(inputTypeDivisionName).sendKeys("Test");
+        //Use of JavaScript
+        driver.findElement(inputTypeDescriptionOfEditDivisionPage).clear();
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+        driver.findElement(inputTypeDescriptionOfEditDivisionPage).sendKeys("Test");
+
+
+        return driver.findElement(displayedMessageOnEditDivisionPage).getText();
+
+    }
+
+    //To verify whether Manage branch page displays with branch details by clicking on branch icon on setting page
+
+    public void clickOnBranchIcon() {
+        driver.findElement(branchIcon).click();
+        try {
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+
+    }
+
+    public String verifyManageBranchPage() {
+        WebDriverWait wait = new WebDriverWait(driver, 10);
+        List<WebElement> branchClass = wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath("//div[@id='gridName']/table/tbody/tr")));
+        String details = " ";
+        for (WebElement data : branchClass) {
+            details = details + data.getText();
+        }
+        return details;
+
+    }
+
+    //Add branch page displays will all details when user clicks on add branch icon on manage branch page
+
+    public void clickOnAddBranchIcon() {
+        driver.findElement(addBranchIcon).click();
+        try {
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+
+    }
+
+    public String verifyAddBranchPage() {
+        return driver.findElement(displayedMessageOnAddBranchPage).getText();
+
+    }
+
+    //Edit branch page displays upon clicking on edit icon against branch code on manage branch page
+
+    public void clickOnEditIconOnManageBranchPage() {
+        driver.findElement(editIconOnManageBranchPage).click();
+        try {
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+
+    }
+
+    public String verifyEditBranchPage() {
+        driver.findElement(inputTypeBranchCode).clear();
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+        driver.findElement(inputTypeBranchCode).sendKeys("Test");
+
+        driver.findElement(inputTypeBranchName).clear();
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+        driver.findElement(inputTypeBranchName).sendKeys("Test");
+
+        driver.findElement(inputTypeDescriptionOfEditBranchPage).clear();
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+        driver.findElement(inputTypeDescriptionOfEditBranchPage).sendKeys("Test");
+
+
+        return driver.findElement(displayedMessageOnEditBranchPage).getText();
+
+    }
+
+    //To verify whether Manage change area page displays with area details by clicking on change area icon on setting page
+
+    public void clickOnChangeAreaIcon() {
+        driver.findElement(changeAreaIcon).click();
+        try {
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+
+    }
+
+    public String verifyManageChangeAreaPage() {
+        WebDriverWait wait = new WebDriverWait(driver, 10);
+        List<WebElement> changeAreaClass = wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath("//div[@id='gridName']/table/tbody/tr")));
+        String details = " ";
+        for (WebElement data : changeAreaClass) {
+            details = details + data.getText();
+        }
+        return details;
+
+    }
+
+    //Add change area page displays will all details when user clicks on add change area icon on manage change area  page
+
+    public void clickOnAddChangeAreaIcon() {
+        driver.findElement(addChangeAreaIcon).click();
+        try {
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+
+    }
+
+    public String verifyAddChangeAreaPage() {
+        return driver.findElement(displayedMessageOnAddChangeAreaPage).getText();
+
+    }
+
+    //Edit change area page displays upon clicking on edit icon against change area name on manage change area page
+
+    public void clickOnEditIconOnManageChangeAreaPage() {
+        driver.findElement(editIconOnManageChangeAreaPage).click();
+        try {
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+
+    }
+
+    public String verifyEditChangeAreaPage() {
+        driver.findElement(inputTypeChangeAreaName).clear();
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+        driver.findElement(inputTypeChangeAreaName).sendKeys("Test");
+
+
+
+        driver.findElement(inputTypeDescriptionOfEditChangeAreaNamePage).clear();
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+        driver.findElement(inputTypeDescriptionOfEditChangeAreaNamePage).sendKeys("Test");
+
+
+        return driver.findElement(displayedMessageOneEditChangeAreaPage).getText();
+
+    }
+
+    //To verify whether Manage sex page of pet displays with pet sex details by clicking on change sex icon on setting page
+
+    public void clickOnSexIcon() {
+        driver.findElement(sexIcon).click();
+        try {
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+
+    }
+
+    public String verifyManageSexPage() {
+        WebDriverWait wait = new WebDriverWait(driver, 10);
+        List<WebElement> sexClass = wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath("//div[@id='gridName']/table/tbody/tr")));
+        String details = " ";
+        for (WebElement data : sexClass) {
+            details = details + data.getText();
+        }
+        return details;
+
+    }
+
+    //Add sex page of pet displays will all details when user clicks on add sex icon on manage sex page
+
+    public void clickOnAddSexIcon() {
+        driver.findElement(addSexIcon).click();
+        try {
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+
+    }
+
+    public String verifyAddSexPage() {
+        return driver.findElement(displayedMessageOnAddSexPage).getText();
+
+    }
+
+    //Edit sex page of pet displays upon clicking on edit icon against sex class on manage sex page of pet
+
+    public void clickOnEditIconOnManageSexPage() {
+        driver.findElement(editIconOnManageSexPage).click();
+        try {
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+
+    }
+
+    public String verifyEditSexPage() {
+        driver.findElement(inputTypeSexName).clear();
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+        driver.findElement(inputTypeSexName).sendKeys("Test");
+
+
+
+        driver.findElement(inputTypeDescriptionOfEditSexPage).clear();
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+        driver.findElement(inputTypeDescriptionOfEditSexPage).sendKeys("Test");
+
+
+        return driver.findElement(displayedMessageOneEditSexPage).getText();
+
+    }
+
+    //To verify whether Manage Debtor Codes of pet displays with debtor code details by clicking on debtor code icon on setting page
+
+    public void clickOnDebtorCodeIcon() {
+        driver.findElement(debtorCodeIcon).click();
+        try {
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+
+    }
+
+    public String verifyManageebtorCodePage() {
+        WebDriverWait wait = new WebDriverWait(driver, 10);
+        List<WebElement> debtorCodeClass = wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath("//div[@id='gridName']/table/tbody/tr")));
+        String details = " ";
+        for (WebElement data : debtorCodeClass) {
+            details = details + data.getText();
+        }
+        return details;
+
+    }
+
+    //Add sex page of pet displays will all details when user clicks on add sex icon on manage sex page
+
+    public void clickOnAddDebtorCodeIcon() {
+        driver.findElement(addDebtorCodeIcon).click();
+        try {
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+
+    }
+
+    public String verifyAddDebtorCodePage() {
+        return driver.findElement(displayedMessageOnAddDebtorCodePage).getText();
+
+    }
+
+    //Edit sex page of pet displays upon clicking on edit icon against sex class on manage sex page of pet
+
+    public void clickOnEditIconOnManageDebtorCodePage() {
+        driver.findElement(editIconOnManageDebtorCodePage).click();
+        try {
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+
+    }
+
+    public String verifyEditDebtorCodePage() {
+        driver.findElement(inputTypeDebtorCodeName).clear();
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+        driver.findElement(inputTypeDebtorCodeName).sendKeys("Test");
+
+
+
+        driver.findElement(inputTypeDescriptionOfEditDebtorCodePage).clear();
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+        driver.findElement(inputTypeDescriptionOfEditDebtorCodePage).sendKeys("Test");
+
+
+        return driver.findElement(displayedMessageOneEditDebtorCodePage).getText();
+
+    }
+
+    //To verify whether Manage renewal type page displays with renewal type details by clicking on renewal type icon on setting page
+
+    public void clickOnRenewalTypeIcon() {
+        driver.findElement(renewalTypeIcon).click();
+        try {
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+
+    }
+
+    public String verifyManageRenewalTypePage() {
+        WebDriverWait wait = new WebDriverWait(driver, 10);
+        List<WebElement> renewalTypeClass = wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath("//div[@id='gridName']/table/tbody/tr")));
+        String details = " ";
+        for (WebElement data : renewalTypeClass) {
+            details = details + data.getText();
+        }
+        return details;
+
+    }
+
+    //Add renewal type page displays will all details when user clicks on add renewal type icon on manage renewal type  page
+
+    public void clickOnAddRenewalTypeIcon() {
+        driver.findElement(addRenewalTypeIcon).click();
+        try {
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+
+    }
+
+    public String verifyAddRenewalTypePage() {
+        return driver.findElement(displayedMessageOneAddRenewalTypePage).getText();
+
+    }
+
+    //Edit renewal type  page displays upon clicking on edit icon against renewal type  name on manage renewal type  page
+
+    public void clickOnEditIconOnManageRenewalTypePage() {
+        driver.findElement(editIconOnManageRenewalTypePage).click();
+        try {
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+
+    }
+
+    public String verifyEditRenewalTypePage() {
+        driver.findElement(inputTypeRenewTypeName).clear();
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+        driver.findElement(inputTypeRenewTypeName).sendKeys("Test");
+
+
+
+        driver.findElement(inputTypeDescriptionOfEditRenewTypePage).clear();
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+        driver.findElement(inputTypeDescriptionOfEditRenewTypePage).sendKeys("Test");
+
+
+        return driver.findElement(displayedMessageOnEditRenewalTypePage).getText();
 
     }
 

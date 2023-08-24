@@ -15,21 +15,21 @@ Feature: Verify Report Module Features
 
   #Quote Report
 
-  @Sanity
+
   Scenario: Filter quote report information upon option of product drop down
     When User clicks on quote report button on report page
     And User selects any option from product drop down on quote report page
     And User clicks on search button on quote report page
     Then Appropriate data displays on quote report page upon selected option from drop down
 
-  @Sanity
+
   Scenario: Filter quote report information upon options value of quote status and quote from drop downs
     When User clicks on quote report button on report page
     And User selects any option from quote from and quote status drop down on quote report page
     And User clicks on search button on quote report page
     Then Appropriate data displays on quote report page upon selected options from drop down
 
-  @Sanity
+
   Scenario: Sorting data on quote report page via quote number and sort direction dropdowns options
     When User clicks on quote report button on report page
     And User selects quote number option from sort by and Ascending option from sort by direction drop down respectively
@@ -38,21 +38,21 @@ Feature: Verify Report Module Features
 
   #Policy Summary Report
 
-  @Sanity
+
   Scenario: Filter policy report information upon option of product drop down
     When User clicks on policy summary report button on report page
     And User selects any option from product drop down on policy summary report page
     And User clicks on search button on policy summary report page
     Then Appropriate data displays on policy summary report page upon selected option from drop down
 
-  @Sanity
+
   Scenario: Filter policy report information upon option of status drop down
     When User clicks on policy summary report button on report page
     And User selects any option from status drop down on policy summary report page
     And User clicks on search button on policy summary report page
     Then Appropriate data displays on policy summary report page upon selected option from status drop down
 
-  @Sanity
+
   Scenario: Sorting data on policy summary report page via policy number and sort direction dropdowns options
     When User clicks on policy summary report button on report page
     And User selects policy number option from sort by and ascending option from sort direction drop down respectively
@@ -77,14 +77,13 @@ Feature: Verify Report Module Features
 
   #Policy Cancellation Report
 
-    @Sanity
+
   Scenario: Filter policy cancellation report information upon option of insurer drop down
     When User clicks on policy cancellation report button on report page
     And User selects any option from insurer drop down on policy cancellation report page
     And User clicks on search button on policy policy cancellation report page
     Then Appropriate data displays on policy policy cancellation report page upon selected option from drop down
 
-    @Sanity
   Scenario: Sorting data on policy cancellation report via sort by and sort direction dropdowns options
     When User clicks on policy cancellation report button on report page
     And User selects any option from sort by and option from sort direction drop down respectively
@@ -92,14 +91,14 @@ Feature: Verify Report Module Features
     Then Appropriate data displays on policy policy cancellation report page upon selected option from drop down
 
    #Outstanding claims report
-  @Sanity
+
   Scenario: Filter Outstanding Claims report information upon notified from and to date
     When User clicks on outstanding claims button on report page
     And User enters from and to date value on outstanding claims page
     And User clicks on search button on outstanding claims
     Then Appropriate data displays on outstanding claims upon date values
 
-  @Sanity
+
   Scenario: Sorting data on Filter Outstanding Claims report via sort by and sort direction dropdowns options
     When User clicks on outstanding claims button on report page
     And User selects any option from sort by and option from sort direction drop down respectively on Filter Outstanding Claims page

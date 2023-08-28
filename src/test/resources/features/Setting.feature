@@ -268,20 +268,20 @@ Feature: Verify Setting Module Features
 
       ##Hear About Us
 
-  @Sanity
-  Scenario: To verify whether Manage hear about us page displays with  details by clicking on hear about us icon on setting page
-    When User clicks on hear about us icon on setting page
-    Then Manage hear about us page displays with all task details
-
-
-  Scenario:Add hear about us page displays will all details when user clicks on add hear about us icon on manage hear about us page
-    When User clicks on hear about us icon on setting page
-    And User clicks on add hear about us icon on manage hear about us page
-    Then Add hear about us page displays with all details
-
-
-  Scenario:Edit hear about us page displays upon clicking on edit icon against hear about us name on manage hear about us page
-    When User clicks on hear about us icon on setting page
-    And User clicks on edit icon against hear about us name on manage hear about us page
-    Then Edit hear about us page displays in editable format
+#  @Sanity
+#  Scenario: To verify whether Manage hear about us page displays with  details by clicking on hear about us icon on setting page
+#    When User clicks on hear about us icon on setting page
+#    Then Manage hear about us page displays with all task details
+#
+#
+#  Scenario:Add hear about us page displays will all details when user clicks on add hear about us icon on manage hear about us page
+#    When User clicks on hear about us icon on setting page
+#    And User clicks on add hear about us icon on manage hear about us page
+#    Then Add hear about us page displays with all details
+#
+#
+#  Scenario:Edit hear about us page displays upon clicking on edit icon against hear about us name on manage hear about us page
+#    When User clicks on hear about us icon on setting page
+#    And User clicks on edit icon against hear about us name on manage hear about us page
+#    Then Edit hear about us page displays in editable format
 

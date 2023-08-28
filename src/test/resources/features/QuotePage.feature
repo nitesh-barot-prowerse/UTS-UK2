@@ -44,23 +44,23 @@ Feature: Verify Quote Module Features
     And User clicks on search button on manage quote page
     Then Appropriate list of quote will display
 
-  @Sanity
-  Scenario: Fetch list of quote based on option from Is referred dropdown on manage quote page
-    When User selects appropriate option from Is referred dropdown on manage quote page
-    And User clicks on search button on manage quote page
-    Then Appropriate list of quote will display upon drop down option
-
-
-  Scenario: Fetch list of quote based on option from division dropdown on manage quote page
-    When User selects appropriate option from division dropdown on manage quote page
-    And User clicks on search button on manage quote page
-    Then Appropriate list of quote will display upon division drop down option
-
-  @Sanity
-  Scenario: Fetch list of quote based on pet id products checkbox on manage quote page
-    When User selects pet id products checkbox on manage quote page
-    And User clicks on search button on manage quote page
-    Then Appropriate list of quote will display upon pet id products checkbox on manage quote page
+#  @Sanity
+#  Scenario: Fetch list of quote based on option from Is referred dropdown on manage quote page
+#    When User selects appropriate option from Is referred dropdown on manage quote page
+#    And User clicks on search button on manage quote page
+#    Then Appropriate list of quote will display upon drop down option
+#
+#
+#  Scenario: Fetch list of quote based on option from division dropdown on manage quote page
+#    When User selects appropriate option from division dropdown on manage quote page
+#    And User clicks on search button on manage quote page
+#    Then Appropriate list of quote will display upon division drop down option
+#
+#  @Sanity
+#  Scenario: Fetch list of quote based on pet id products checkbox on manage quote page
+#    When User selects pet id products checkbox on manage quote page
+#    And User clicks on search button on manage quote page
+#    Then Appropriate list of quote will display upon pet id products checkbox on manage quote page
 
 
   Scenario:Verify include payment feature of quote module

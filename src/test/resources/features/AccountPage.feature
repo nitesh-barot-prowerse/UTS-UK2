@@ -16,13 +16,13 @@ Feature: Verify Account Module Functionalities
 #    And User enters account number in search box on manage bank page
 #    And User clicks on search button on manage bank page
 #    Then Data on manage bank page reflects upon account number
-
+  @Sanity
   Scenario: Filter data of manage bank page upon entering account number
     When User clicks on bank icon
     And User enters client name in search box on manage bank page
     And User clicks on search button on manage bank page
     Then Data on manage bank page reflects upon client name
-
+  @Sanity
   Scenario: Bank Information page displays with details after clicking on bank code link on manage bank details
     When User clicks on bank icon
     And User clicks on bank code link on manage bank page

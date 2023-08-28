@@ -9,14 +9,14 @@ Feature:  Verify Client Module Features
   Scenario:Ensure that the Manage Client page displays list of client data after clicking on client icon on left tool bar
     Then Manage client page displays with list of clients
 
-
+  @Sanity
   Scenario: Filter list of client based on active status dropdown option on manage client page also verifies client status on view client page
     When User selects appropriate option from Active dropdown on manage client page
     And User clicks on search button
     And User clicks on client code on manage client page
     Then Client status displays on view client page
 
-
+  @Sanity
   Scenario: To check whether add quote page is displays for same user by clicking on add button on view client page
     When User clicks on client code on manage client page to add quote
     And User clicks on add button on view client page

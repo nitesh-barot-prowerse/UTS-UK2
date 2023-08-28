@@ -21,19 +21,19 @@ Feature: Verify Admin Module Features
     Then Account page displays with icons and corresponding page displays by clicking on icon.
 
 #Product
-
+  @Sanity
   Scenario: To verify whether View Product page displays with product details with status after by clicking on product code on manage product page
     When User clicks on product icon administration page
     And User clicks on product code on manage product page
     Then View product page displays with all product details
 
-
+  @Sanity
   Scenario: To verify if insurer pop up windows displays by  clicking on insurer configuration pop up on setting icon on manage product page
     When User clicks on product icon administration page
     And User clicks on insurer configuration icon
     Then Insurer configuration displays with all details
 
-
+  @Sanity
   Scenario: To verify if agent configuration pop up windows displays by  clicking on agent configuration on setting icon on manage product page
     When User clicks on product icon administration page
     And User clicks on agent configuration icon
@@ -48,32 +48,32 @@ Feature: Verify Admin Module Features
 
   #DepartMent
 
-
+  @Sanity
   Scenario:Add department page  displays will all details when user clicks on add department icon on manage department page
     When User clicks on department icon on administrator page
     And User clicks on add department icon on manage department page
     Then Add department page displays with all details
 
-
+  @Sanity
   Scenario: Edit department page displays upon clicking on edit icon against department name inside list of department on manage department page
     When User clicks on department icon on administrator page
     And User clicks on edit icon against department name on manage department page
     Then Edit department page displays in editable format
 
   #Staff
-
+  @Sanity
   Scenario:Filter data of staff details upon department and active drop down options on manage staff  page
     When User clicks on staff icon on administrator page
     And User selects options from department and active dropdown
     Then List of staff details filtered upon options
 
-
+  @Sanity
   Scenario:Add staff page displays with all details upon clicking on add staff icon on manage staff page
     When User clicks on staff icon on administrator page
     And User clicks on add staff icon on manage staff page
     Then Add staff page displays with all details
 
-
+  @Sanity
   Scenario: Edit staff page displays upon clicking on edit icon against staff name inside list of staff on manage staff page
     When User clicks on staff icon on administrator page
     And User clicks on edit icon against staff name on manage staff page
@@ -81,12 +81,12 @@ Feature: Verify Admin Module Features
 
 #Bank
 
-
+  @Sanity
   Scenario: Manage Bank Account page displays with all details by clicking on bank account icon on administration page
     When User clicks on bank account icon
     Then Manage bank account page displays with all details
 
-
+  @Sanity
   Scenario: Filter data of bank details upon bank account and insurer drop down items on manage bank account page
     When User clicks on bank icon on administration page
     And User selects any item from bank account drop down
@@ -94,19 +94,17 @@ Feature: Verify Admin Module Features
     And User clicks on search button on manage bank account page
     Then User will find respected data under bank detail table
 
-
+  @Sanity
   Scenario: Add Bank account page displays with details after clicking on add bank account button on manage bank account page
     When User clicks on bank icon on administration page
     And User clicks on add bank account icon on manage bank account page
     Then Add bank account page displays with all details
 
-
+  @Sanity
   Scenario: On the manage bank account page click the Edit icon against a insurer name. The Edit Bank Account page should open with the  data in editable format.
     When User clicks on bank icon on administration page
     And User clicks on edit icon against insurer name on manage bank account page
     Then Edit Bank account page displays with all fields in editable format
-
-
 
 
 #Insurer

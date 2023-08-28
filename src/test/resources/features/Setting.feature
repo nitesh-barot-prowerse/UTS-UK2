@@ -10,48 +10,48 @@ Feature: Verify Setting Module Features
     Then User will able to redirect to respected page
 
   #Product Type
-
+  @Sanity
   Scenario: To verify whether Manage Policy Type page displays with policy type details by clicking on policy type icon on setting page
     When User clicks on policy type icon setting page
     Then Manage Policy Type page displays with all policy type details
 
-
+  @Sanity
   Scenario:Add policy type page  displays will all details when user clicks on add policy type icon on manage policy type page
     When User clicks on policy type icon setting page
     And User clicks on add policy type icon on manage policy type page
     Then Add policy type page displays with all details
 
-
+  @Sanity
   Scenario: Edit policy type page displays upon clicking on edit icon against policy type on manage policy type page
     When User clicks on policy type icon setting page
     And User clicks on edit icon against policy type on manage policy type page
     Then Edit policy type page displays in editable format
 
   #Client Class
-
+  @Sanity
   Scenario: To verify whether Manage client class page displays with client class details by clicking on client lass icon on setting page
     When User clicks on client class icon setting page
     Then Manage client class page displays with all client class details
 
-
+  @Sanity
   Scenario:Add client class page  displays will all details when user clicks on add client class icon on manage class client page
     When User clicks on client class icon setting page
     And User clicks on add client class icon on manage class client page
     Then Add client class page displays with all details
 
-
+  @Sanity
   Scenario: Edit client class page displays upon clicking on edit icon against client class icon on manage client class page
     When User clicks on client class icon setting page
     And User clicks on edit icon against client class name on manage client class page
     Then Edit client class page displays in editable format
 
    #Insurer Class
-
+  @Sanity
   Scenario: To verify whether Manage insurer class page displays with insurer class details by clicking on insurer lass icon on setting page
     When User clicks on insurer class icon setting page
     Then Manage insurer class page displays with all client class details
 
-
+  @Sanity
   Scenario:Add Insurer class page displays will all details when user clicks on add insurer class icon on manage insurer class page
     When User clicks on insurer class icon setting page
     And User clicks on add insurer class icon on manage insurer class page
@@ -222,7 +222,7 @@ Feature: Verify Setting Module Features
     When User clicks on pet breed icon on setting page
     Then Manage pet breed page displays with all task details
 
-
+  @Sanity
   Scenario:Add Pet Breed page displays will all details when user clicks on add pet breed icon on manage pet breed  page
     When User clicks on pet breed icon on setting page
     And User clicks on add pet breed icon on manage pet breed page
@@ -260,7 +260,7 @@ Feature: Verify Setting Module Features
     When User clicks on regular vet icon on setting page
     Then Manage regular vet displays with all task details
 
-
+  @Sanity
   Scenario:Add regular vet page displays will all details when user clicks on add regular vet icon on manage regular vet page
     When User clicks on regular vet icon on setting page
     And User clicks on add regular vet icon on manage regular vet page

@@ -17,7 +17,7 @@ Feature: Verify Policy Module Features
     When User clicks on policy number
     Then User will redirect to policy information page
 
-
+  @Sanity
   Scenario:Verify that the user can download the client's policy letter
     When User clicks on policy number link
     And User clicks on letter tab on policy information page
@@ -40,24 +40,24 @@ Feature: Verify Policy Module Features
     When User clicks on add claim icon of cog drop down against policy number on manage policy page
     Then Add claim displays with all details
 
-
+  @Sanity
   Scenario: Verify that add note window should open with all details by clicking on add note icon of cog drop down against policy number on manage policy page
     When User clicks on add note window icon of cog drop down against policy number on manage policy page
     Then Add note window displays with all details
 
-
+  @Sanity
   Scenario: Verify that quote information page should open with all details by clicking on view quote icon of cog drop down against active policy number on manage policy page
     When User clicks on view quote icon of cog drop down against policy number on manage policy page
     Then Quote information page displays with all details
 
-
+  @Sanity
   Scenario: Add claim page displays with all details by clicking add claim icon of cog drop down on policy information page
     When User selects any active option from status dropdown on manage policy page
     And  User clicks on policy number link on manage policy page
     And User selects add claim page icon option from cog drop dowm on policy information page
     Then Add claim page displays with all details
 
-
+  @Sanity
   Scenario: Add note window displays with all details by clicking add note icon of cog drop down on policy information page
     When User selects any active option from status dropdown on manage policy page
     And User clicks on policy number link on manage policy page
@@ -71,14 +71,14 @@ Feature: Verify Policy Module Features
     And User selects add endorsement icon of cog drop down on policy information page
     Then Policy endorsement page displays with all details
 
-
+  @Sanity
   Scenario: Quote information page displays with all details by clicking view quote icon of cog drop down on policy information page
     When User selects any active option from status dropdown on manage policy page
     And User clicks on policy number link on manage policy page
     And User selects view quote icon option from cog drop down on policy information page
     Then Quote information displays with all required details
 
-
+  @Sanity
   Scenario: Cancel  policy window displays with all details by clicking cancel policy icon of cog drop down on policy information page
     When User selects any active option from status dropdown on manage policy page
     And User clicks on policy number link on manage policy page
@@ -92,13 +92,13 @@ Feature: Verify Policy Module Features
     And User selects add allocate payment icon of cog drop down on policy information page
     Then Add allocate payment page displays with all details
 
-
+  @Sanity
   Scenario:Client account maintenance displays with all details by clicking add account maintenance icon of cog drop down on policy information page
     When User selects any active option from status dropdown on manage policy page
     And User clicks on policy number link on manage policy page
     And User selects add account maintenance icon of cog drop down on policy information page
     Then Client account maintenance displays with all details
-
+  @Sanity
   Scenario:Verify appropriate details should reflect by clicking on  transactions tab on policy information page
     When User clicks on policy number link on manage policy page
     And User clicks on transactional tab on policy information page

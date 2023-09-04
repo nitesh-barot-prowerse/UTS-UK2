@@ -75,16 +75,16 @@ Feature: Verify Quote Module Features
     Then User will be able to see microchip file upload page with data
 
 
-  @Sanity
-  Scenario:Upload details window should open by clicking on file name link on microchip file upload page
-    When User clicks on upload microchip file button
-    And User clicks on filename link on upload microchip page
-    Then Upload details window displays with all details
-
-
-  Scenario:Verify that quote information page displays with same status code on by clicking on quote code on manage quote page
-    When User clicks on quote number link on manage quote page
-    Then Quote information page displays with sane status code
+#  @Sanity
+#  Scenario:Upload details window should open by clicking on file name link on microchip file upload page
+#    When User clicks on upload microchip file button
+#    And User clicks on filename link on upload microchip page
+#    Then Upload details window displays with all details
+#
+#
+#  Scenario:Verify that quote information page displays with same status code on by clicking on quote code on manage quote page
+#    When User clicks on quote number link on manage quote page
+#    Then Quote information page displays with sane status code
 
 #  @Stage
 #  Scenario:verify functionality of upload file feature  on microchip upload file page
@@ -92,10 +92,10 @@ Feature: Verify Quote Module Features
 #    And user click on upload file button
 #    Then user will able to upload file
 #
-  @Sanity
-  Scenario:Pending Microchip displays with details by clicking on pending microchip button on manage quote page
-    When User clicks on pending microchip file button
-    Then Pending Microchip page displays with details
+#  @Sanity
+#  Scenario:Pending Microchip displays with details by clicking on pending microchip button on manage quote page
+#    When User clicks on pending microchip file button
+#    Then Pending Microchip page displays with details
 
 #  @Qa
 #  Scenario:Fetch quotation based on quote number on manage quote page

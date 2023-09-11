@@ -7,9 +7,7 @@ public class Constant {
 
     public static String url;
     static {
-        if(ENVIRONMENT.equals("UTS-UK2QA")){
-            url="https://stage.petcovergroup.com:7779/";
-        } else if (ENVIRONMENT.equals("UTS-UK2Stage")) {
+         if (ENVIRONMENT.equals("UTS-UK2Stage")) {
             url="https://stage.petcovergroup.com:8889/";
         }
         else if (ENVIRONMENT.equals("UTS-UK2production")) {

@@ -7,6 +7,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.time.Duration;
 import java.util.List;
 
 public class SettingPage {
@@ -697,7 +698,7 @@ public class SettingPage {
     }
 
     public String verifyManagePolicyTypeIcon() {
-        WebDriverWait wait = new WebDriverWait(driver, 10);
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         List<WebElement> policyTypeList = wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath("//div[@id='gridName']/table/tbody/tr")));
         String details = " ";
         for (WebElement data : policyTypeList) {
@@ -747,7 +748,7 @@ public class SettingPage {
         //Use of JavaScript
         ((JavascriptExecutor) driver).executeScript("document.getElementById('Period').style.display='block';");
         WebElement inputTypePeriod1 = driver.findElement(By.id("Period"));
-        WebDriverWait wait1 = new WebDriverWait(driver, 10);
+        WebDriverWait wait1 = new WebDriverWait(driver, Duration.ofSeconds(10));
         String order = "23";
         wait1.until(ExpectedConditions.visibilityOf(inputTypePeriod1)).sendKeys(order);
         try {
@@ -781,7 +782,7 @@ public class SettingPage {
     }
 
     public String verifyManageClientClassPage() {
-        WebDriverWait wait = new WebDriverWait(driver, 10);
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         List<WebElement> ClientClass = wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath("//div[@id='gridName']/table/tbody/tr")));
         String details = " ";
         for (WebElement data : ClientClass) {
@@ -861,7 +862,7 @@ public class SettingPage {
     }
 
     public String verifyManageInsurerClassPage() {
-        WebDriverWait wait = new WebDriverWait(driver, 10);
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         List<WebElement> InsurerClass = wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath("//div[@id='gridName']/table/tbody/tr")));
         String details = " ";
         for (WebElement data : InsurerClass) {
@@ -942,7 +943,7 @@ public class SettingPage {
     }
 
     public String verifyManageDivisionPage() {
-        WebDriverWait wait = new WebDriverWait(driver, 10);
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         List<WebElement> divisionClass = wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath("//div[@id='gridName']/table/tbody/tr")));
         String details = " ";
         for (WebElement data : divisionClass) {
@@ -1016,7 +1017,7 @@ public class SettingPage {
     }
 
     public String verifyManageBranchPage() {
-        WebDriverWait wait = new WebDriverWait(driver, 10);
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         List<WebElement> branchClass = wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath("//div[@id='gridName']/table/tbody/tr")));
         String details = " ";
         for (WebElement data : branchClass) {
@@ -1098,7 +1099,7 @@ public class SettingPage {
     }
 
     public String verifyManageChangeAreaPage() {
-        WebDriverWait wait = new WebDriverWait(driver, 10);
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         List<WebElement> changeAreaClass = wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath("//div[@id='gridName']/table/tbody/tr")));
         String details = " ";
         for (WebElement data : changeAreaClass) {
@@ -1174,7 +1175,7 @@ public class SettingPage {
     }
 
     public String verifyManageSexPage() {
-        WebDriverWait wait = new WebDriverWait(driver, 10);
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         List<WebElement> sexClass = wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath("//div[@id='gridName']/table/tbody/tr")));
         String details = " ";
         for (WebElement data : sexClass) {
@@ -1250,7 +1251,7 @@ public class SettingPage {
     }
 
     public String verifyManageebtorCodePage() {
-        WebDriverWait wait = new WebDriverWait(driver, 10);
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         List<WebElement> debtorCodeClass = wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath("//div[@id='gridName']/table/tbody/tr")));
         String details = " ";
         for (WebElement data : debtorCodeClass) {
@@ -1326,7 +1327,7 @@ public class SettingPage {
     }
 
     public String verifyManageRenewalTypePage() {
-        WebDriverWait wait = new WebDriverWait(driver, 10);
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         List<WebElement> renewalTypeClass = wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath("//div[@id='gridName']/table/tbody/tr")));
         String details = " ";
         for (WebElement data : renewalTypeClass) {
@@ -1402,7 +1403,7 @@ public class SettingPage {
     }
 
     public String verifyManageTaskTypePage() {
-        WebDriverWait wait = new WebDriverWait(driver, 10);
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         List<WebElement> taskTypeClass = wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath("//div[@id='gridName']/table/tbody/tr")));
         String details = " ";
         for (WebElement data : taskTypeClass) {
@@ -1478,7 +1479,7 @@ public class SettingPage {
     }
 
     public String verifyManageTaskStatusPage() {
-        WebDriverWait wait = new WebDriverWait(driver, 10);
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         List<WebElement> taskStatusClass = wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath("//div[@id='gridName']/table/tbody/tr")));
         String details = " ";
         for (WebElement data : taskStatusClass) {
@@ -1570,7 +1571,7 @@ public class SettingPage {
     }
 
     public String verifyManagePetBreedPage() {
-        WebDriverWait wait = new WebDriverWait(driver, 10);
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         List<WebElement> petBreedClass = wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath("//div[@id='gridName']/table/tbody/tr")));
         String details = " ";
         for (WebElement data : petBreedClass) {
@@ -1678,7 +1679,7 @@ public class SettingPage {
     }
 
     public String verifyManageExclusionPage() {
-        WebDriverWait wait = new WebDriverWait(driver, 10);
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         List<WebElement> exclusionClass = wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath("//div[@id='gridName']/table/tbody/tr")));
         String details = " ";
         for (WebElement data : exclusionClass) {
@@ -1776,7 +1777,7 @@ public class SettingPage {
     }
 
     public String verifyManageRegularVetPage() {
-        WebDriverWait wait = new WebDriverWait(driver, 10);
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         List<WebElement> regularVetClass = wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath("//div[@id='gridName']/table/tbody/tr")));
         String details = " ";
         for (WebElement data : regularVetClass) {
@@ -1816,7 +1817,7 @@ public class SettingPage {
     }
 
     public String verifyManageHearAboutUsPage() {
-        WebDriverWait wait = new WebDriverWait(driver, 10);
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         List<WebElement> hearAboutUsClass = wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath("//div[@id='gridName']/table/tbody/tr")));
         String details = " ";
         for (WebElement data : hearAboutUsClass) {

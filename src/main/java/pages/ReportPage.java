@@ -7,6 +7,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.time.Duration;
 import java.util.List;
 
 public class ReportPage {
@@ -147,7 +148,7 @@ public class ReportPage {
     }
 
     public int fetchSections() {
-        WebDriverWait cWait = new WebDriverWait(driver, 10);
+        WebDriverWait cWait = new WebDriverWait(driver, Duration.ofSeconds(10));
         List<WebElement> totalColumn = cWait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath("//div[@class='ibox']/div/div")));
         int size = totalColumn.size();
         return size;
@@ -684,7 +685,7 @@ public class ReportPage {
     // Filter quote report information upon options value of quote status and quote from drop downs
 
     public void clickOnQuoteReportIcon() {
-        WebDriverWait cWait = new WebDriverWait(driver, 10);
+        WebDriverWait cWait = new WebDriverWait(driver, Duration.ofSeconds(10));
         WebElement quoteIcon = cWait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@class='ibox']/div[1]/div[1]/div/div[2]/a")));
         quoteIcon.click();
         try {
@@ -724,7 +725,7 @@ public class ReportPage {
     }
 
     public String verifyQuoteReportData() {
-        WebDriverWait cWait = new WebDriverWait(driver, 10);
+        WebDriverWait cWait = new WebDriverWait(driver, Duration.ofSeconds(10));
         List<WebElement> quoteDetails = cWait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath("//div[@class='wrapper wrapper-content']/div/div/table/tbody/tr[1]/td")));
         String details = " ";
         for (WebElement cLE : quoteDetails) {
@@ -790,7 +791,7 @@ public class ReportPage {
     }
 
     public String verifyPolicySummaryReportData() {
-        WebDriverWait cWait = new WebDriverWait(driver, 10);
+        WebDriverWait cWait = new WebDriverWait(driver, Duration.ofSeconds(10));
         List<WebElement> policySummaryDetails = cWait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath("//div[@class='wrapper wrapper-content']/div/div/table/tbody/tr")));
         String details = " ";
         for (WebElement cLE : policySummaryDetails) {
@@ -815,7 +816,7 @@ public class ReportPage {
     }
 
     public String verifyPolicySummaryReportDataUponStatusDD() {
-        WebDriverWait cWait = new WebDriverWait(driver, 10);
+        WebDriverWait cWait = new WebDriverWait(driver, Duration.ofSeconds(10));
         List<WebElement> policySummaryDetails = cWait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath("//div[@class='wrapper wrapper-content']/div/div/table/tbody/tr")));
         String details = " ";
         for (WebElement cLE : policySummaryDetails) {
@@ -849,7 +850,7 @@ public class ReportPage {
     }
 
     public String verifyPolicySummaryReportDataUponSortBYDD() {
-        WebDriverWait cWait = new WebDriverWait(driver, 10);
+        WebDriverWait cWait = new WebDriverWait(driver, Duration.ofSeconds(10));
         List<WebElement> policySummaryDetails = cWait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath("//div[@class='wrapper wrapper-content']/div/div/table/tbody/tr")));
         String details = " ";
         for (WebElement cLE : policySummaryDetails) {
@@ -902,7 +903,7 @@ public class ReportPage {
     }
 
     public String verifyOutstandingRenewalReportData() {
-        WebDriverWait cWait = new WebDriverWait(driver, 10);
+        WebDriverWait cWait = new WebDriverWait(driver, Duration.ofSeconds(10));
         List<WebElement> outStandingRenewalReportDetails = cWait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath("//div[@id='OutStandingRenewalReportGrid']/table/tbody/tr")));
         String details = " ";
         for (WebElement cLE : outStandingRenewalReportDetails) {
@@ -955,7 +956,7 @@ public class ReportPage {
     }
 
     public String verifyPolicyHistoryReportData() {
-        WebDriverWait cWait = new WebDriverWait(driver, 10);
+        WebDriverWait cWait = new WebDriverWait(driver, Duration.ofSeconds(10));
         List<WebElement> policyHistoryDetails = cWait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath("//div[@class='ibox-grid']/div/table/tbody/tr")));
         String details = " ";
         for (WebElement cLE : policyHistoryDetails) {
@@ -1000,7 +1001,7 @@ public class ReportPage {
     }
 
     public String verifyPolicyCancellationReportData() {
-        WebDriverWait cWait = new WebDriverWait(driver, 10);
+        WebDriverWait cWait = new WebDriverWait(driver, Duration.ofSeconds(10));
         List<WebElement> policyCancellationDetails = cWait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath("//div[@class='wrapper wrapper-content']/div/div/table/tbody/tr")));
         String details = " ";
         for (WebElement cLE : policyCancellationDetails) {
@@ -1075,7 +1076,7 @@ public class ReportPage {
     }
 
     public String verifyOutstandingClaimData() {
-        WebDriverWait cWait = new WebDriverWait(driver, 10);
+        WebDriverWait cWait = new WebDriverWait(driver, Duration.ofSeconds(10));
         List<WebElement> outstandingClaimDetails = cWait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath("//div[@class='wrapper wrapper-content']/div/div/table/tbody/tr")));
         String details = " ";
         for (WebElement cLE : outstandingClaimDetails) {
@@ -1109,7 +1110,7 @@ public class ReportPage {
     }
 
     public String verifyOutstandingClaimDataUponSorting() {
-        WebDriverWait cWait = new WebDriverWait(driver, 10);
+        WebDriverWait cWait = new WebDriverWait(driver, Duration.ofSeconds(10));
         List<WebElement> outstandingClaimDetails = cWait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath("//div[@class='wrapper wrapper-content']/div/div/table/tbody/tr")));
         String details = " ";
         for (WebElement cLE : outstandingClaimDetails) {

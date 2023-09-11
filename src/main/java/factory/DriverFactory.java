@@ -3,9 +3,12 @@ package factory;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.safari.SafariDriver;
+
+import java.util.HashMap;
 
 public class DriverFactory {
     public WebDriver driver;
@@ -18,26 +21,23 @@ public class DriverFactory {
         System.out.println("The name of the browser is " + browser);
 
         if (browser.equals("chrome")) {
-            WebDriverManager.chromedriver().setup();
-            tlLocal.set(new ChromeDriver());
+            //WebDriverManager.chromedriver().setup();
+            WebDriver driver1=new ChromeDriver();
+            tlLocal.set(driver1);
 
 
-        }
-        else if (browser.equals("firefox")) {
+        } else if (browser.equals("firefox")) {
             WebDriverManager.firefoxdriver().setup();
             tlLocal.set(new FirefoxDriver());
 
-        }
-        else if (browser.equals("microsoft edge")) {
+        } else if (browser.equals("microsoft edge")) {
             WebDriverManager.edgedriver().setup();
             tlLocal.set(new EdgeDriver());
 
-        }
-        else if (browser.equals("safari")) {
+        } else if (browser.equals("safari")) {
             tlLocal.set(new SafariDriver());
 
-        }
-        else {
+        } else {
             System.out.println("Please pass the correct browser value: " + browser);
         }
 
